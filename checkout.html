@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vic 2 kostura</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<main>
+    <!-- Odradi samo jedan div input da radi kako treba sve ostalo je samo copy paste
+i promena sta je input do not overthink it, funkcija u js najverovatnije ista jer ce svi tehnicki
+da se otovore, izlistaju i pokazu "istu stvar" -->
+    <div class="h2-logo">
+    <img src="assets/img/logo.png" alt="logo" width="100px">
+    <h2 id="h2-element">The amogus potion</h2>
+    </div>
+    <div class="checkout-container">
+        <div class="billing-info">
+        <div class="billing">
+            <h1>Billing Address</h1>
+        <div class="billing-form">
+        <input type="text" placeholder="Full name"><br>
+        <input type="email" placeholder="@email"><br>
+        <input type="text" placeholder="@instagram" id=""><br>
+        <input type='country' placeholder="country"><br>
+        <label for="address">
+        <input type="address" placeholder="address" id="address">
+        </div>
+        </div>
+        <div class="payment-info">
+        <div id="info">
+            <b>
+            <li>Ime: Zivkovic Slobodan</li>
+            <li>Struka: Polu covek polu poljovoprivrednik</li>
+            <li>Mesto: Tum Guzija, Beograd, 11000</li>
+            <li>Broj racuna: 94651654416849849494</li>
+            </b>
+        </div>
+        <div class="payment">
+            <div class="visa-dina">
+                <img src="assets/img/visa.png" alt="visa"><br>
+                <img src="assets/img/dina.png" alt="dinacard">
+            </div>
+            <div class="rai-idcheck">            
+                <img src="assets/img/Raiffeisen_Bank.png" alt="dinacard"><br>
+                <img src="assets/img/idcheck.png" alt="dinacard">
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="summary">
+            <h1>Summary</h1><br><br>
+            <div class="serv-pack">
+
+                <p class="paragraph">Service Package</p>
+                <span id="basic">Basic</span>    
+            </div><br>
+            <div class="billing-mon">
+                <p class="paragraph">Billed Monthly</p>
+                <span><input type="checkbox" id="billing-mon-check"></span>
+            </div><br>
+            <div id="h2-price">
+                <h2>$199.00</h2>
+                <p>/one time</p>    
+            </div>
+            <br><hr><br>
+                <div class="total-bill">
+                    <h3>Total Billed</h3>
+                    <p><b>$199.00</b></p>
+                </div><br>
+                <hr><br>
+                <div class="payment-bank">
+                <p>
+                    * You will be redirected to the bank payment gateway
+                </p><br>
+                <p>
+                    * Total billed amount will be displayed and converted to our local currency
+                </p><br>
+                <button>Complete purchase</button>
+               </div>
+               <br>
+                <div class="secure-payment">
+                    <div class="green-sheild">
+                        <span><img src="" alt="green-sheild" width="20px"></span>
+                        <h4>Secure credit card payment</h4>
+                    </div>
+                    <p>This is a secure SSL encrypted payment</p>
+                </div>
+        </div>
+    </div>
+</main>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

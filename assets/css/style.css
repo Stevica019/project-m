@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    justify-content: flex-start;
+
+}
+ /*        HEADER       */
+header {
+    background-color: hsla(0, 0%, 0%);
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+.navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo img{
+    width: 4rem;
+}
+.navitem{
+    list-style-type: none;
+    
+}
+.navitem a{
+    text-decoration: none;
+    color: hsl(46, 88%, 53%); 
+    gap: 30px; 
+    padding: 30px;
+    width: 100%;
+    display: block;
+}
+.navitem a:hover{
+    background-color: rgb(19, 19, 19);
+    color: rgb(255, 208, 0);
+    transition: 0.5s ease;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 5px 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:rgb(255, 208, 0);
+}
+ /*        MAIN       */
+.text-video{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsla(0, 0%, 0%, 0.980);
+    padding: 30px 45px;
+    align-items: center;
+    gap: 40px;
+}
+.text{
+    width: 50%;
+    color: rgb(255, 208, 0);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.video{
+    width: 50%;
+}
+.video video{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.elements{
+    width: 100%;
+    display: flex;
+    padding: 25px 10px;
+}
+.element{
+    margin: 10px 10px ;
+    padding: 20px;
+    width: 32%;
+    border: 2px solid;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+}
+.element li{
+    text-align: left;
+}
+.element img{
+    width: 50%;
+    height: 45%;
+    margin: 10px 10px;
+    border-radius: 20px;
+}
+.element button{
+    font-size: 2rem;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.element a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.element a:hover{
+    background-color: black;
+    color: rgb(255, 208, 0);
+    transition: 0.3s ease-in-out;
+}
+.services-container{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 50px 20px;
+    margin: 10px 10px;
+}
+.services-container h1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.service-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+.service1{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.service1 img{
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px hsla(0, 0%, 0%, 0.850);
+    
+}
+.service1 li{
+    list-style-type: none;
+}
+.service2{
+    width: 70%;
+    text-align: center;
+}
+.service3{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.service3-block{
+    text-align: center;
+    width: 40%;
+}
+.service3-image{
+    width: 40%;
+    text-align: right;
+}
+.service3 img{
+    width: 200px;
+    border-radius: 100px;
+    box-shadow: 10px 10px 5px hsla(0, 0%, 0%, 0.850);
+    
+}
+.service3 li{
+    list-style-type: none;
+}
+.aboutUs{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutUs h1{
+    text-align: center;
+    padding: 30px;
+}
+.About-Us{
+    border: 5px solid;
+    border-radius: 20px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 15px;
+}
+.about-pars{
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 15px 15px;
+}
+/*      Checkout      */
+.h2-logo{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.checkout-container{
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    gap: 40px;
+    flex-direction: row;
+}
+.billing-info{
+    display: flex;
+    width: 60%;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+.billing{
+    width: 40%;
+    
+}
+.billing-form{
+    padding-top: 30px;
+}
+.billing-form input{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.payment-info{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 20px;
+}
+#info{
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 5px;
+    width: 85%;
+    list-style: none;
+}
+.payment{
+    width: 75%;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+}
+.payment img{
+    width: 100px;
+}
+.visa-dina{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rai-idcheck{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary{
+    width: 40%;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+.serv-pack{
+    display: flex;
+    justify-content: space-between;
+}
+#basic{
+    background-color: rgb(214, 4, 4);
+    padding: 6px 6px;
+    border-radius: 7px;
+}
+.billing-mon{
+    display: flex;
+    justify-content: space-between;
+}
+#h2-price{
+    display: flex;
+    justify-content: right;
+}
+.total-bill{
+    display: flex;
+    justify-content: space-between;
+}
+.payment-bank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+.payment-bank button{
+    width: 70%;
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgb(200, 200, 200);
+    border-radius: 15px;
+    padding: 8px 5px;
+    cursor: pointer;
+}
+.secure-payment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.green-sheild{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* namesti na row kad ubacis znak */
+}
+ /*        FOOTER       */
+footer{
+    background-color: hsla(0, 0%, 0%);
+}
+.footer{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(255, 208, 0);
+}
+.footerLinks{
+    display: flex;
+    padding-left: 20px;
+
+}
+.footerNavItem{
+    list-style-type: none;
+    margin: 5px;
+}
+.footerNavItem a{
+    text-decoration: none;
+    color: hsl(46, 88%, 53%); 
+}
+.footerNavItem a:hover{
+    color: hsl(39, 100%, 50%); 
+}
+
+/*         MEDIA        */
+
+@media (max-width:768px) {
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8.8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8.8px) rotate(-45deg);
+    }
+    .navMenu{
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        gap:0;
+        flex-direction: column;
+        background-color: hsla(0, 0%, 0%);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .navitem{
+        padding: 10px;
+        width: 100%;
+    }
+    .navMenu.active{
+        left: 0;
+    }
+    /*  Obrati paznju   */
+    .text-video{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    .text{
+        width: 100%;
+    }
+    .video{
+        width: 100%;
+    }
+    .elements{
+        display: block;
+    }
+    .element{
+        width: 100%;
+    }
+}
+
