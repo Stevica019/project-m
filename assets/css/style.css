@@ -16,9 +16,20 @@ body{
 
 }
  /*        HEADER       */
-header {
-    background-color: hsla(0, 0%, 0%);
+
+.header {
+        position: fixed;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        transition: top 0.3s;
+        background-color: hsla(0, 0%, 0%);
+        z-index: 1000; 
+    }
+.header.visible {
+    top: 0;
 }
+
 .navbar{
     min-height: 70px;
     display: flex;
@@ -74,6 +85,7 @@ header {
     padding: 30px 45px;
     align-items: center;
     gap: 40px;
+    padding-top: 100px;
 }
 .text{
     width: 50%;
@@ -97,7 +109,8 @@ header {
 .element{
     margin: 10px 10px ;
     padding: 20px;
-    width: 32%;
+    min-width: 32%;
+    max-width: 90%;
     border: 2px solid;
     display: flex;
     gap: 15px;
@@ -395,8 +408,12 @@ footer{
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8.8px) rotate(-45deg);
     }
+    header{
+        position: fixed;
+        width: 100%;
+    }
     .navMenu{
-        position: absolute;
+        position: fixed;
         left: -100%;
         top: 70px;
         gap:0;
@@ -413,13 +430,11 @@ footer{
     .navMenu.active{
         left: 0;
     }
-    /*  Obrati paznju   */
     .text-video{
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 30px;
-
+        gap: 50px;
     }
     .text{
         width: 100%;
@@ -431,7 +446,7 @@ footer{
         display: block;
     }
     .element{
-        width: 100%;
+        max-width: 100%;
     }
 }
 
