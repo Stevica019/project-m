@@ -13,10 +13,10 @@ document.querySelectorAll(".navlink").forEach(n =>
     }))
 
 //  Header
-var lastScrollTop = 0;
+let lastScrollTop = 0;
 
     window.addEventListener("scroll", function() {
-        var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
         if (currentScroll > lastScrollTop) {
             document.querySelector(".header").classList.remove("visible");
@@ -29,8 +29,8 @@ var lastScrollTop = 0;
     }, false);
     
 window.addEventListener("scroll", function() {
-    var headerVisible = document.querySelector(".header").classList.contains("visible");
-    var navScroll = document.querySelector(".navMenu");
+    let headerVisible = document.querySelector(".header").classList.contains("visible");
+    let navScroll = document.querySelector(".navMenu");
     
     if (!headerVisible) {
         navScroll.style.top = "0px";
@@ -40,3 +40,18 @@ window.addEventListener("scroll", function() {
         }
     }, false);
     
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+    
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+    
+        if (targetElement) {
+            window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+            });
+        }
+    });
+});

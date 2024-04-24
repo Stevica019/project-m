@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vic 2 kostura</title>
+    <title>Project-M</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 <main>
     <!-- Odradi samo jedan div input da radi kako treba sve ostalo je samo copy paste
 i promena sta je input, funkcija u js najverovatnije ista -->
+<div class="checkout">
     <div class="h2-logo">
     <img src="assets/img/logo.png" alt="logo" width="100px">
     <h2 id="h2-element">The amogus potion</h2>
@@ -18,23 +19,21 @@ i promena sta je input, funkcija u js najverovatnije ista -->
         <div class="billing-info">
         <div class="billing">
             <h1>Billing Address</h1>
-        <div class="billing-form">
-        <input type="text" placeholder="Full name"><br>
-        <input type="email" placeholder="@email"><br>
-        <input type="text" placeholder="@instagram" id=""><br>
-        <input type='country' placeholder="country"><br>
-        <label for="address">
-        <input type="address" placeholder="address" id="address">
+        <div class="input-container">
+        <input type="text"><label for="">Full name</label><br>
+        <input type="text"><label for="">@email</label><br>
+        <input type="text"><label for="">@instagram</label><br>
+        <input type="text"><label for="">Country</label><br>
+        <input type="text"><label for="">address</label><br>
         </div>
         </div>
         <div class="payment-info">
         <div id="info">
-            <b>
-            <li>Ime: Zivkovic Slobodan</li>
-            <li>Struka: Polu covek polu poljovoprivrednik</li>
-            <li>Mesto: Tum Guzija, Beograd, 11000</li>
-            <li>Broj racuna: 94651654416849849494</li>
-            </b>
+            <li>Stefan Stevanovic</li>
+            <li>11000 Belgrade, Serbia</li>
+            <li>MB:15484354</li>
+            <li>IBAN: RS684654846000658406</li>
+            <li>SWIFT: RSBSBGBB</li>
         </div>
         <div class="payment">
             <div class="visa-dina">
@@ -57,7 +56,7 @@ i promena sta je input, funkcija u js najverovatnije ista -->
             </div><br>
             <div class="billing-mon">
                 <p class="paragraph">Billed Monthly</p>
-                <span><input type="checkbox" id="billing-mon-check"></span>
+                <span><input type="checkbox" id="billing-mon-check" disabled></span>
             </div><br>
             <div id="h2-price">
                 <h2>$199.00</h2>
@@ -66,7 +65,7 @@ i promena sta je input, funkcija u js najverovatnije ista -->
             <br><hr><br>
                 <div class="total-bill">
                     <h3>Total Billed</h3>
-                    <p><b>$199.00</b></p>
+                    <p>$199.00</p>
                 </div><br>
                 <hr><br>
                 <div class="payment-bank">
@@ -76,7 +75,7 @@ i promena sta je input, funkcija u js najverovatnije ista -->
                 <p>
                     * Total billed amount will be displayed and converted to our local currency
                 </p><br>
-                <button>Complete purchase</button>
+                <button disabled>Complete purchase</button>
                </div>
                <br>
                 <div class="secure-payment">
@@ -88,6 +87,7 @@ i promena sta je input, funkcija u js najverovatnije ista -->
                 </div>
         </div>
     </div>
+</div>
 </main>
 
     <script src="assets/js/index.js"></script>
