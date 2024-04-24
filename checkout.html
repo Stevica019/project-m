@@ -13,18 +13,18 @@ i promena sta je input, funkcija u js najverovatnije ista -->
 <div class="checkout">
     <div class="h2-logo">
     <img src="assets/img/logo.png" alt="logo" width="100px">
-    <h2 id="h2-element">The amogus potion</h2>
+    <h2 id="h2-element">Let's finish powering you up</h2>
     </div>
     <div class="checkout-container">
         <div class="billing-info">
         <div class="billing">
-            <h1>Billing Address</h1>
+            <h4>Billing Address</h4>
         <div class="input-container">
-        <input type="text"><label for="">Full name</label><br>
-        <input type="text"><label for="">@email</label><br>
-        <input type="text"><label for="">@instagram</label><br>
-        <input type="text"><label for="">Country</label><br>
-        <input type="text"><label for="">address</label><br>
+        <input type="text" required><label for="">Full name</label><br>
+        <input type="text" required><label for="">@email</label><br>
+        <input type="text" required><label for="">@instagram</label><br>
+        <input type="text" required><label for="">Country</label><br>
+        <input type="text" required><label for="">address</label><br>
         </div>
         </div>
         <div class="payment-info">
@@ -48,39 +48,38 @@ i promena sta je input, funkcija u js najverovatnije ista -->
         </div>
         </div>
         <div class="summary">
-            <h1>Summary</h1><br><br>
-            <div class="serv-pack">
-
-                <p class="paragraph">Service Package</p>
+            <h4>Summary</h4><br><br>
+            <div class="checkout-summary-elems">
+                <p class="checkout-paragraph">Service Package</p>
                 <span id="basic">Basic</span>    
             </div><br>
-            <div class="billing-mon">
-                <p class="paragraph">Billed Monthly</p>
+            <div class="checkout-summary-elems">
+                <p class="checkout-paragraph">Billed Monthly</p>
                 <span><input type="checkbox" id="billing-mon-check" disabled></span>
             </div><br>
-            <div id="h2-price">
+            <div id="ot-price">
                 <h2>$199.00</h2>
                 <p>/one time</p>    
             </div>
             <br><hr><br>
-                <div class="total-bill">
-                    <h3>Total Billed</h3>
-                    <p>$199.00</p>
+                <div class="checkout-summary-elems">
+                    <h4>Total Billed</h4>
+                    <p class="checkout-paragraph">$199.00</p>
                 </div><br>
                 <hr><br>
                 <div class="payment-bank">
                 <p>
-                    * You will be redirected to the bank payment gateway
+                    * You will be redirected to the bank payment
                 </p><br>
                 <p>
                     * Total billed amount will be displayed and converted to our local currency
                 </p><br>
-                <button disabled>Complete purchase</button>
+                <button onclick="completePurchase()" id="completePurchase">Complete purchase</button>
                </div>
                <br>
                 <div class="secure-payment">
                     <div class="green-sheild">
-                        <span><img src="" alt="green-sheild" width="20px"></span>
+                        <span><img src="assets/img/shield-48.png" alt="green-sheild" width="20px"></span>
                         <h4>Secure credit card payment</h4>
                     </div>
                     <p>This is a secure SSL encrypted payment</p>

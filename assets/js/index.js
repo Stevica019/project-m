@@ -55,3 +55,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+const completePurchase = document.getElementById('completePurchase');

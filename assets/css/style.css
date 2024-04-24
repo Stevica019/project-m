@@ -246,18 +246,23 @@ body{
     padding-bottom: 50px;
 }
 .checkout-container{
-    width: 75%;
+    width: 1150px;
     display: flex;
     gap: 20px;
     flex-direction: row;
 }
+.checkout-container h4{
+    text-align: left;
+    padding: 10px 10px;
+}
 .billing-info{
     display: flex;
     width: 70%;
-    border: 2px dotted rgba(148, 148, 148, 0.384);
+    border: 1px dotted rgba(196, 196, 196, 0.384);
     border-radius: 20px;
     padding: 20px 20px;
-    gap: 50px;
+    gap: 15px;
+    height: 500px;
 }
 .billing{
     width: 50%;
@@ -270,7 +275,7 @@ body{
     width: 100%;
     font-size: 1.2rem;
     border-radius: 10px;
-    border: 2px solid rgba(148, 148, 148, 0.384);
+    border: 1px solid rgba(148, 148, 148, 0.384);
     padding: 10px 15px;
     background: transparent;
 }
@@ -284,14 +289,14 @@ body{
 }
 
 .payment-info{
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0px 20px;
+    justify-content: space-between;
+    padding: 15px 20px;
 }
 #info{
-    border: 2px solid rgba(148, 148, 148, 0.384);
+    border: 1px solid rgba(148, 148, 148, 0.384);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -300,20 +305,22 @@ body{
     width: 100%;
     list-style: none;
     font-weight: bold;
+    font-size: 14px;
 }
 #info li{
-    margin: 5px;
+    margin: 2px;
 }
 .payment{
     width: 100%;
-    border: 2px solid rgba(148, 148, 148, 0.384);
+    border: 1px solid rgba(148, 148, 148, 0.384);
     border-radius: 10px;
     padding: 30px 0px;
     display: flex;
     align-items: center;
 }
 .payment img{
-    width: 100px;
+    width: 90px;
+    cursor: pointer;
 }
 .visa-dina{
     width: 50%;
@@ -328,60 +335,66 @@ body{
     align-items: center;
 }
 .summary{
-    width: 40%;
+    width: 30%;
     background-color:rgba(244, 246, 248, 0.925);
     border-radius: 15px;
-    padding: 20px 20px;
+    padding: 30px 30px;
 }
-.serv-pack{
+.summary hr{
+    border: 1px dotted rgba(194, 193, 193, 0.616);
+}
+.checkout-paragraph {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+.checkout-summary-elems{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
 }
 #basic{
-    background-color: rgb(214, 4, 4);
-    padding: 6px 6px;
+    background-color: rgb(216, 65, 6);
+    padding: 4px 10px;
     font-weight: bold;
     color: white;
     border-radius: 7px;
+    font-size: 14px;
 }
-.billing-mon{
-    display: flex;
-    justify-content: space-between;
-}
-#h2-price{
+#ot-price{
     display: flex;
     justify-content: right;
-}
-.total-bill{
-    display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 .payment-bank{
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: left;
+    font-size: 12px;
 }
 .payment-bank button{
-    width: 70%;
+    width: 85%;
     font-size: 1.2rem;
+    align-self: center;
     border: none;
     background-color: rgba(221, 218, 218, 0.815);
-    border-radius: 15px;
-    padding: 10px 15px;
+    border-radius: 10px;
+    padding: 15px 15px;
+    cursor: pointer;
 }
 .secure-payment{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    font-size: 14px;
 }
 .green-sheild{
     text-align: center;
     align-items: center;
     display: flex;
-    flex-direction: column;
-    /* namesti na row kad ubacis znak */
+    flex-direction: row;
 }
  /*        FOOTER       */
 footer{
