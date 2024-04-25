@@ -260,32 +260,62 @@ body{
     width: 70%;
     border: 1px dotted rgba(196, 196, 196, 0.384);
     border-radius: 20px;
-    padding: 20px 20px;
-    gap: 15px;
+    padding: 20px 10px;
+    gap: 10px;
     height: 500px;
 }
 .billing{
-    width: 50%;
+    width: 60%;
 }
+/*      INPUT       */
 .input-container{
-    margin-top: 30px;
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 .input-container input{
-    margin-bottom: 10px;
-    width: 100%;
-    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 320px;
+    font-size: 18px;
     border-radius: 10px;
     border: 1px solid rgba(148, 148, 148, 0.384);
     padding: 10px 15px;
     background: transparent;
+    transition: 0.2s ease;
+    z-index: 1111;
+
+}
+.entryarea{
+    position: relative;
+
+}
+.labelline{
+    position: absolute;
+    font-size: 16px;
+    top: 2px;
+    left: 50px;
+    margin: 10px 10px;
+    padding: 0px 0px;
+    transition: 0.2s ease;
+    background-color: white;
+    text-align: left;
 }
 .input-container input:hover {
     border-color: rgba(37, 37, 37, 0.842);
     transition: 0.15s;
 }
-.input-container input:focus {
+.input-container input:focus, input:valid {
     border-color: rgba(116, 219, 19, 0.89);
     outline: none;
+}
+.input-container input:focus + .labelline, 
+                 input:valid + .labelline {
+    color: rgba(116, 219, 19, 0.89);
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-2px, -30px);
+    z-index: 1112;
 }
 
 .payment-info{
