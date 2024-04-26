@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
     box-sizing: border-box;
 
 }
@@ -239,11 +240,15 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-.h2-logo{
+.checkout-logo{
     text-align: center;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#checkout-headline{
+    font-weight: bold;
+    font-size: 1.6rem;
 }
 .checkout-container{
     width: 1150px;
@@ -254,6 +259,7 @@ body{
 .checkout-container h4{
     text-align: left;
     padding: 10px 10px;
+    font-weight: bold;
 }
 .billing-info{
     display: flex;
@@ -266,6 +272,9 @@ body{
 }
 .billing{
     width: 60%;
+}
+.billing h4{
+    margin-left: 40px;
 }
 /*      INPUT       */
 .input-container{
@@ -288,7 +297,6 @@ body{
 }
 .entryarea{
     position: relative;
-
 }
 .labelline{
     position: absolute;
@@ -300,7 +308,45 @@ body{
     transition: 0.2s ease;
     background-color: white;
     text-align: left;
+    color: rgba(66, 66, 66, 0.61);
+    pointer-events: none;
 }
+.labellinestatic{
+    position: absolute;
+    font-size: 16px;
+    top: 2px;
+    left: 50px;
+    margin: 10px 10px;
+    padding: 0px 0px;
+    transition: 0.2s ease;
+    background-color: white;
+    text-align: left;
+    pointer-events: none;
+}
+
+.labellinetop{
+    position: absolute;
+    top: 2px;
+    left: 50px;
+    margin: 10px 10px;
+    padding: 0px 0px;
+    transition: 0.2s ease;
+    background-color: white;
+    text-align: left;
+    transform: translate(-2px, -22px);
+    font-size: 13px;
+    z-index: 1111;
+    color: rgba(66, 66, 66, 0.61);
+    pointer-events: none;
+}
+.input-container input[name="instagram"]{
+    text-indent: 20px;
+}
+.input-container input:focus + .labellinetop, 
+                 input:valid + .labellinetop {
+        color: rgba(116, 219, 19, 0.89);
+}
+
 .input-container input:hover {
     border-color: rgba(37, 37, 37, 0.842);
     transition: 0.15s;
@@ -314,10 +360,11 @@ body{
     color: rgba(116, 219, 19, 0.89);
     height: 30px;
     line-height: 30px;
-    transform: translate(-2px, -30px);
-    z-index: 1112;
+    font-size: 13px;
+    transform: translate(-2px, -28px);
+    z-index: 1111;
 }
-
+/*    Rest of checkout    */
 .payment-info{
     width: 50%;
     display: flex;
@@ -334,11 +381,11 @@ body{
     padding: 20px 25px;
     width: 100%;
     list-style: none;
-    font-weight: bold;
     font-size: 14px;
 }
 #info li{
     margin: 2px;
+    font-weight: bold;
 }
 .payment{
     width: 100%;
@@ -426,6 +473,62 @@ body{
     display: flex;
     flex-direction: row;
 }
+/*      SLIDER      */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 21px;
+  }
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(19px);
+  }
+.slider.round {
+    border-radius: 34px;
+  }
+.slider.round:before {
+    border-radius: 50%;
+  }
  /*        FOOTER       */
 footer{
     background-color: hsla(0, 0%, 0%);
