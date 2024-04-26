@@ -102,51 +102,6 @@ body{
     border-radius: 20px;
 }
 
-.elements{
-    width: 100%;
-    display: flex;
-    padding: 25px 10px;
-}
-.element{
-    margin: 10px 10px ;
-    padding: 20px;
-    min-width: 32%;
-    max-width: 90%;
-    border: 2px solid;
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    border-radius: 15px;
-    text-align: center;
-    align-items: center;
-}
-.element li{
-    text-align: left;
-}
-.element img{
-    width: 50%;
-    height: 45%;
-    margin: 10px 10px;
-    border-radius: 20px;
-}
-.element button{
-    font-size: 2rem;
-    margin-top: 20px;
-    border-radius: 20px;
-}
-.element a{
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 20px;
-}
-.element a:hover{
-    background-color: black;
-    color: rgb(255, 208, 0);
-    transition: 0.3s ease-in-out;
-}
 .services-container{
     width: 100%;
     font-size: 1.2rem;
@@ -207,6 +162,73 @@ body{
 }
 .service3 li{
     list-style-type: none;
+}
+
+.elements{
+    width: 100%;
+    display: flex;
+    padding: 0px 40px;
+    margin-top: 200px;
+}
+.element{
+    margin: 10px 10px ;
+    padding: 20px;
+    min-width: 32%;
+    max-width: 90%;
+    border: 2px solid;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    height: 400px;
+}
+.element-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+}
+.element li{
+    text-align: left;
+    list-style-type: none;
+}
+
+.element-pic{
+    top: -250px;
+    position: absolute;
+    height: 0%;
+}
+.element img{
+    border-radius: 20px;
+}
+.element button{
+    font-size: 2rem;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 40%;
+    align-self: center;
+    border: none;
+}
+.element button:hover{
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+.element a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 18px;
+}
+.element a:hover{
+    color: rgb(255, 208, 0);
+    transition: 0.3s ease-in-out;
 }
 .aboutUs{
     padding: 40px;
@@ -615,6 +637,8 @@ footer{
     }
     .element{
         max-width: 100%;
+        margin-bottom: 250px;
     }
 }
+
 
