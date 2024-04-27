@@ -72,10 +72,11 @@ body{
     width: 320px;
     font-size: 18px;
     border-radius: 10px;
-    border: 1px solid rgba(148, 148, 148, 0.384);
+    border: 1px solid hsla(0, 0%, 58%, 0.384);
     padding: 10px 15px;
     background: transparent;
     transition: 0.2s ease;
+    color: hsla(0, 0%, 13%, 0.658);
     z-index: 1111;
 
 }
