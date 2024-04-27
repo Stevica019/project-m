@@ -442,6 +442,26 @@ footer{
         margin-bottom: 100px;
         height: 700px;
     }
+    .service-block{
+        width: 100%;
+    }
+    .service1{
+        display: flex;
+        flex-direction: column;
+    }
+    .service1 img{
+        width: 70%;
+        margin-top: 30px;
+    }
+    .service3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .About-Us{
+        width: 100%;
+    }
 }
 
 
