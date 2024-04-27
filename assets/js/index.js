@@ -1,4 +1,4 @@
-// burger
+// burger  //
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".navMenu");
 
@@ -12,7 +12,7 @@ document.querySelectorAll(".navlink").forEach(n =>
         navMenu.classList.remove("active");
     }))
 
-//  Header
+//  Header  //
 let lastScrollTop = 0;
 
     window.addEventListener("scroll", function() {
@@ -56,4 +56,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+// Checkout //
+
+const checkoutPack = document.querySelectorAll("element");
+
 const completePurchase = document.getElementById('completePurchase');
+
