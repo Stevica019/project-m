@@ -8,7 +8,9 @@
 }
 
 body{
-    background-color: hsla(207, 68%, 27%, 0.747);
+    
+    background: rgb(19,7,51);
+    background: linear-gradient(175deg, rgba(19,7,51,1) 15%, rgba(0,0,0,1) 45%, rgba(14,4,41,1) 60%, rgba(14,5,40,1) 75%);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -24,9 +26,9 @@ body{
         left: 0;
         width: 100%;
         transition: top 0.3s;
-        background-color: hsla(0, 0%, 0%);
+        background-color: rgba(19,7,51,1);
         z-index: 1000; 
-    }
+}
 .header.visible {
     top: 0;
 }
@@ -46,6 +48,7 @@ body{
 }
 .logo img{
     width: 4rem;
+    margin-left: 5px;
 }
 .navitem{
     list-style-type: none;
@@ -60,7 +63,7 @@ body{
     display: block;
 }
 .navitem a:hover{
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 208, 0);
     transition: 0.5s ease;
 }
@@ -82,7 +85,6 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    background-color: hsla(0, 0%, 0%, 0.980);
     padding: 30px 45px;
     align-items: center;
     gap: 40px;
@@ -90,15 +92,16 @@ body{
 }
 .text{
     width: 50%;
-    color: hsl(49, 100%, 50%);
+    color: hsl(0, 0%, 99%);
     text-align: center;
-    text-shadow: 7px 7px 12px goldenrod;
+    text-shadow: 7px 7px 12px black;
     font-size: 1.5rem;
     margin: 10px 30px;
 }
 .text h1{
     font-weight: bold;
     margin-bottom: 25px;
+    color: hsl(49, 100%, 50%);
 }
 
 .video{
@@ -135,10 +138,7 @@ body{
     flex-direction: column;
     gap: 150px;
     align-items: center;
-    background-color: hsl(0, 0%, 100%);
     padding: 50px 0px;
-    border-radius: 50px;
-    box-shadow: 0px 0px 10px 8px;
 }
 .service1{
     width: 100%;
@@ -150,22 +150,21 @@ body{
 .service1 img{
     width: 40%;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px hsla(0, 0%, 0%, 0.850);
+    box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.850);
     scale: 0.95;  
 }
 .services-container li{
     list-style-type: none;
     font-size: 1.6rem;
     font-weight: bold;
-    color: hsl(0, 0%, 25%);
-    text-shadow: 5px 5px 15px black;
+    color: hsl(0, 0%, 100%);
+
 }
 .service2{
     width: 70%;
     text-align: center;
     font-weight: bold;
-    color: hsl(0, 0%, 25%);
-    text-shadow: 5px 5px 15px black;
+    color: hsl(0, 100%, 99%);
 }
 .service3{
     width: 100%;
@@ -209,9 +208,10 @@ body{
 }
 #basic{
     border: 3px solid goldenrod;
-    box-shadow: -10px 10px 10px 10px hsla(0, 0%, 0%, 0.850);
+    box-shadow: -10px 10px 25px 10px hsla(0, 0%, 0%, 0.850);
     scale: 0.85;
-    background-color: hsl(209, 81%, 25%);
+    background: rgb(37,79,79);
+    background: linear-gradient(175deg, rgb(50, 134, 134) 25%, rgba(209,156,41,1) 100%);
     text-shadow: 5px 5px 10px black;
     color: white;
 }
@@ -220,9 +220,10 @@ body{
     transition: 0.3s;
 }
 #ultimate{
-    background-color: rgb(67, 57, 161);
+    background: rgb(50,14,149);
+background: linear-gradient(175deg, rgba(50,14,149,1) 25%, rgba(0,0,0,1) 100%);
     border: 3px solid goldenrod;
-    box-shadow: 0px 5px 10px 15px hsla(0, 0%, 0%, 0.850);
+    box-shadow: 0px 5px 25px 15px hsla(0, 0%, 0%, 0.850);
     color: aliceblue;
     text-shadow: 5px 5px 10px black;
     scale: 0.9;
@@ -233,10 +234,11 @@ body{
 }
 #pro{
     border: 3px solid goldenrod;
-    box-shadow: 10px 10px 10px 10px hsla(0, 0%, 0%, 0.850);
+    box-shadow: 10px 10px 25px 10px hsla(0, 0%, 0%, 0.850);
     scale: 0.85;
     text-shadow: 5px 5px 10px black;
-    background-color: hsl(209, 81%, 25%);
+    background: rgb(37,79,79);
+    background: linear-gradient(175deg, rgba(37,79,79,1) 25%, rgba(209,156,41,1) 100%);
     color: white;
 }
 #pro:hover{
@@ -297,7 +299,6 @@ body{
     font-size: 2rem;
     margin-top: 20px;
     border-radius: 20px;
-    width: 45%;
     align-self: center;
     border: none;
 }
@@ -339,7 +340,7 @@ body{
 }
 .About-Us{
     border:none;
-    box-shadow: 0px 0px 10px 8px;
+    box-shadow: 10px 10px 40px 8px;
     border-radius: 20px;
     padding: 50px 60px;
     display: flex;
@@ -361,7 +362,7 @@ body{
 }
  /*        FOOTER       */
 footer{
-    background-color: hsla(0, 0%, 0%);
+    background-color: rgba(14,5,40,1);
 }
 .footer{
     width: 100%;
@@ -410,7 +411,8 @@ footer{
         top: 70px;
         gap:0;
         flex-direction: column;
-        background-color: hsla(0, 0%, 0%);
+        background: rgb(19,7,51);
+background: linear-gradient(175deg, rgba(19,7,51,1) 10%, rgba(14,4,41,1) 25%, rgba(14,5,40,1) 40%, rgba(0,0,0,1) 75%);
         width: 100%;
         text-align: center;
         transition: 0.3s;
