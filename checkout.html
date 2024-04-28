@@ -21,11 +21,11 @@ i promena sta je input, funkcija u js najverovatnije ista -->
             <h4>Billing Address</h4>
         <div class="input-container">
             <div class="entryarea">
-                <input type="text" required>
+                <input type="text" required pattern="[A-Za-z]+ [A-Za-z]+">
                 <div class="labelline">Full name</div>
             </div>
             <div class="entryarea">
-                <input type="email" required>
+                <input type="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                 <div class="labelline">Email</div>
             </div>
             <div class="entryarea">
@@ -67,7 +67,7 @@ i promena sta je input, funkcija u js najverovatnije ista -->
             <h4>Summary</h4><br><br>
             <div class="checkout-summary-elems">
                 <p class="checkout-paragraph">Service Package</p>
-                <span id="basic">Basic</span>    
+                <span id="span-text"></span>    
             </div><br>
             <div class="checkout-summary-elems">
                 <p class="checkout-paragraph">Billed Monthly</p>
@@ -77,13 +77,13 @@ i promena sta je input, funkcija u js najverovatnije ista -->
                   </label>
             </div><br>
             <div id="ot-price">
-                <h2>$199.00</h2>
+                <h2 class="checkoutPrices"></h2>
                 <p>/one time</p>    
             </div>
             <br><hr><br>
                 <div class="checkout-summary-elems">
                     <h4>Total Billed</h4>
-                    <p class="checkout-paragraph">$199.00</p>
+                    <p id="checkout-paragraph" class="checkoutPrices"></p>
                 </div><br>
                 <hr><br>
                 <div class="payment-bank">

@@ -102,8 +102,8 @@
 <div class="elements">
 <div class="element" id="basic" name="side-div">
     <div class="element-text">
-    <h1 class="side-titles">Basic</h1>
-    <h1 class="side-prices">29,99$</h1>
+    <h1 class="side-titles" id="elTitles1">Basic</h1>
+    <h1 class="side-prices" id="elPrices1">29,99$</h1>
     <h3>What do you get?</h3> 
     <ul>
         <li>Some spicy ahh serive</li>
@@ -111,7 +111,7 @@
         <li>Lorem ipsum¿</li>
         <li>Perhaps some potaotoes</li>
     </ul>
-    <button class="buttons"><a href="checkout.html">Checkout</a></button>
+    <button class="buttons" id="button1" onclick="checkoutFunction()">Checkout</button>
     </div>
 </div>
 <div class="element" id="ultimate" name="main-div">
@@ -119,8 +119,8 @@
     <img src="./assets/img/potatoes.png" alt="Lbozo"> 
     </div>
     <div class="element-text">
-    <h1 class="main-title">Ultimate</h1>
-    <h1 class="main-price">99,99$</h1>
+    <h1 class="main-title" id="elTitles2">Ultimate</h1>
+    <h1 class="main-price" id="elPrices2">99,99$</h1>
     <h3>What do you get?</h3>  
     <ul>
         <li>Some spicy ahh serive</li>
@@ -130,13 +130,13 @@
         <li>Picture of a cat (optional)</li>
         <li>Hot pictures of randjit (guy from above)</li>
     </ul>
-    <button class="buttons"><a href="checkout.html">Checkout</a></button> 
+    <button class="buttons" id="button2" onclick="checkoutFunction()">Checkout</button> 
     </div>
 </div>
 <div class="element" id="pro" name="side-div">
     <div class="element-text">
-    <h1 class="side-titles">Pro</h1>
-    <h1 class="side-prices">79,99$</h1>
+    <h1 class="side-titles" id="elTitles3">Pro</h1>
+    <h1 class="side-prices" id="elPrices3">79,99$</h1>
     <h3>What do you get?</h3> 
     <ul>
         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
@@ -145,7 +145,7 @@
         <li>Perhaps some potaotoes</li>
         <li>Picture of a cat (optional)</li>
     </ul>
-    <button class="buttons"><a href="checkout.html">Checkout</a></button>
+    <button class="buttons" id="button3" onclick="checkoutFunction()">Checkout</button>
     </div>
 </div>
 </div>
@@ -191,9 +191,9 @@
 <footer>
     <div class="footer">
     <div class="footerLinks">
-            <a href="index.html" class="footerNavlink">Home</a>
-            <a href="#aboutServices" class="footerNavlink">Services</a>
-            <a href="#aboutUs" class="footerNavlink">About us</a>
+        <div><a href="index.html">Home</a></div>
+        <div><a href="#aboutServices">Services</a></div>
+        <div><a href="#aboutUs">About us</a></div>        
     </div>
     </div>
     
