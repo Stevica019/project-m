@@ -72,12 +72,12 @@ body{
     width: 320px;
     font-size: 18px;
     border-radius: 10px;
-    border: 1px solid hsla(0, 0%, 58%, 0.384);
+    border: 1px solid hsla(0, 0%, 58%, 0.541);
     padding: 10px 15px;
     background: transparent;
     transition: 0.2s ease;
     color: hsla(0, 0%, 13%, 0.658);
-    z-index: 1111;
+    z-index: 1115;
 
 }
 .entryarea{
@@ -85,11 +85,9 @@ body{
 }
 .labelline{
     position: absolute;
-    font-size: 16px;
-    top: 2px;
-    left: 50px;
-    margin: 10px 10px;
-    padding: 0px 0px;
+    font-size: 15px;
+    top: 12px;
+    left: 60px;
     transition: 0.2s ease;
     background-color: white;
     text-align: left;
@@ -111,9 +109,8 @@ body{
 
 .labellinetop{
     position: absolute;
-    top: 2px;
-    left: 50px;
-    margin: 10px 10px;
+    top: 11px;
+    left: 60px;
     padding: 0px 0px;
     transition: 0.2s ease;
     background-color: white;
@@ -145,7 +142,7 @@ body{
     color: rgba(116, 219, 19, 0.89);
     height: 30px;
     line-height: 30px;
-    font-size: 13px;
+    font-size: 12px;
     transform: translate(-2px, -28px);
     z-index: 1111;
 }
@@ -236,14 +233,23 @@ body{
     font-size: 12px;
 }
 .payment-bank button{
-    width: 85%;
     font-size: 1.2rem;
     align-self: center;
     border: none;
-    background-color: rgba(221, 218, 218, 0.815);
     border-radius: 10px;
-    padding: 15px 15px;
+    padding: 15px 25px;
     cursor: pointer;
+}
+.disabled{
+    opacity: 0.8;
+    background-color: rgb(226, 226, 226);
+    color: black;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.enabled{
+    background-color: rgb(47, 190, 4);
+    color: white;
 }
 .secure-payment{
     display: flex;
