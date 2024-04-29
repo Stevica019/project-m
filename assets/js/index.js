@@ -1,3 +1,19 @@
+//      Loader      //
+window.addEventListener("load", ()=>{
+
+    const loader = document.querySelector(".loader");
+
+    setTimeout(() => {
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () =>{
+            document.body.removeChild(loader);
+        })
+    }, 2000);
+});
+
+
+
 // burger  //
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".navMenu");
@@ -63,9 +79,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // Checkout //
+const buttons = document.querySelectorAll(".buttons");
+
 function checkoutFunction(){
-    
-    let buttons = document.querySelectorAll(".buttons");
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {
