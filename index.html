@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="loader"></div>
-<header class="header visible">
+<header class="header visible" id="topofpage">
         <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
@@ -17,10 +17,13 @@
         </div>
             <ul class="navMenu">
                 <li class="navitem">
-                    <a href="index.html" class="navlink">Home</a>
+                    <a href="#topofpage" class="navlink">Home</a>
                 </li>
                 <li class="navitem">
-                    <a href="#aboutServices" class="navlink">Services</a>
+                    <a href="#aboutServices" class="navlink">About Services</a>
+                </li>
+                <li class="navitem">
+                    <a href="#packages">Services</a>
                 </li>
                 <li class="navitem">
                     <a href="#aboutUs" class="navlink">About us</a>
@@ -34,6 +37,20 @@
     </nav>
 </header>
 <main>
+<div class="lander">
+    <h1>Hello</h1>
+    <h2>Lets get started with your expirance</h2>
+    <div class="sign-up">
+    <h3>Sign up if you want</h3>
+    <button>Sign up</button>
+    </div>
+    <div class="log-in">
+        <h3>Already have an account?</h3>
+        <button>Login</button>
+    </div>
+    <p></p>
+</div>
+
      <!-- Text video div -->
 <div class="text-video">
     <div class="text"> 
@@ -96,7 +113,7 @@
 
         <!-- Services Div -->
 
-<div class="elements">
+<div class="elements" id="packages">
 <div class="element" id="basic" name="side-div">
     <div class="element-text">
     <h1 class="side-titles" id="elTitles1">Basic</h1>
@@ -188,9 +205,10 @@
 <footer>
     <div class="footer">
     <div class="footerLinks">
-        <div><a href="index.html">Home</a></div>
-        <div><a href="#aboutServices">Services</a></div>
-        <div><a href="#aboutUs">About us</a></div>        
+        <div><a href="#topofpage">Home</a></div>
+        <div><a href="#aboutServices">About Services</a></div>
+        <div><a href="#packages">Services</a></div>  
+        <div><a href="#aboutUs">About us</a></div>      
     </div>
     </div>
     
