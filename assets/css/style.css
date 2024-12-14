@@ -132,47 +132,31 @@ body{
     font-weight: bold;
     font-size: 2rem;
 }
-.sign-up{
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
 .lander h3{
     font-style: italic;
 }
-.sign-up button{
+.sign-up, .log-in{
+    display: flex;
+    gap: 12px;
+    
+}
+.sign-up button, .log-in button{
     padding: 5px 10px;
-    color: rgb(235, 168, 0);
     background-color: hsl(0, 0%, 15%);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-.sign-up button:hover{
+.sign-up button:hover, .log-in button:hover{
     background-color: black;
     color: goldenrod;
     transition: 0.3s ease-in-out;
     scale: 1.2;
 }
-.log-in{
-    display: flex;
-    gap: 10px;
+.sign-up button a, .log-in button a{
+    color: rgb(235, 168, 0);
+    text-decoration: none;
 }
-.log-in button{
-    padding: 5px 10px;
-    color: rgb(231, 191, 88);
-    background-color: hsl(0, 0%, 15%);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.log-in button:hover{
-    background-color: black;
-    color: rgb(243, 176, 6);
-    transition: 0.3s ease-in-out;
-    scale: 1.2;
-}
-
 
 /*      TEXT-VIDEO      */
 .text-video{

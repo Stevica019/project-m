@@ -148,7 +148,12 @@ function checkInputsValidity() {
     });
     return isValid;
 }
-
+/*
+fucntion checkoutNumber(){
+    const servicePackage = document.getElementById("span-text");
+    const price = document.querySelectorAll("checkoutPrices");
+}
+*/
 
 function toggleButton() {
     if (checkInputsValidity()) {
